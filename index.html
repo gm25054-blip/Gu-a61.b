@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Catálogo de productos - Guía L-61b</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+<script src="codigo.js" defer></script>
+
+</head>
+
+<body >
+ <h1>Catálogo de productos API REST</h1>
+     <p>
+		Estudiante: Rubí Angélica García Mejía<br>
+    	Carnet: GM25054<br>
+    	Asignatura: Programación para Internet<br>
+    	Guía de laboratorio: L-61b</p>
+	 <p><button onclick="obtenerProductos();this.style.display='none';">Obtener Productos</button></p>
+	 <div id="listado" style="display:none;">
+	 <form name="filtroprods" id="filtroprods">
+	   Seleccione Categorias 
+	   <input type="checkbox" id="c1" value="c1" checked>Electronicos
+	 <input type="checkbox" id="c2" value="c2" checked>Joyería
+   <input type="checkbox" id="c3" value="c3" checked>Ropa Caballero
+   <input type="checkbox" id="c4" value="c4" checked>Ropa Dama
+   <ol><li>Click en la imagen para Acercamiento</li>
+   <li>Click en precio para ordenar Asc o Desc</li></ol>
+     <table id="tabla" border="1">
+	 <thead>
+	 <tr><th>id</th><th>foto</th><th  id="price">price</th>
+	 <th>title</th><th>description</th><th>category</th><th>Rating</th></tr>
+	 </thead>
+	 <tbody id="tbody"></tbody>
+	 </table>
+	 </form>
+	 </div>
+	
+     
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #26394a;
+    margin: 20px;
+}
+
+h1 {
+    color: #0D3B66;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    line-height: 1.7;
+}
+
+button {
+    background-color: #2E86EB;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #0D3B66;
+}
+
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #0D3B66;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #dce3ea;
+    overflow-wrap: anywhere;
+}
+
+td.rating {
+    text-align: center;
+    font-weight: bold;
+    color: #0D3B66;
+}
+
+img {
+    width: 3cm;
+    height: 3cm;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+th#price {
+    cursor: pointer;
+}
+
+li {
+    color: blue;
+}
+
+input#c1:checked ~ table tbody tr.c1,
+input#c2:checked ~ table tbody tr.c2,
+input#c3:checked ~ table tbody tr.c3,
+input#c4:checked ~ table tbody tr.c4 {
+    display: table-row;
+}
+
+input#c1:not(:checked) ~ table tbody tr.c1,
+input#c2:not(:checked) ~ table tbody tr.c2,
+input#c3:not(:checked) ~ table tbody tr.c3,
+input#c4:not(:checked) ~ table tbody tr.c4 {
+    display: none;
+}
